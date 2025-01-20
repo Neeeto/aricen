@@ -261,7 +261,7 @@ def get_target_address():
         address = ask('ARW57d3SU4DLBcYDBC9MLU4gvPji2s2hexiy47UiPyDwonA5G3NKn').strip()
         if address:
             return address
-        log('Please enter a valid address.', Fore.YELLOW)
+        log('ARW57d3SU4DLBcYDBC9MLU4gvPji2s2hexiy47UiPyDwonA5G3NKn', Fore.YELLOW)
 
 def get_referral_code():
     while True:
