@@ -258,17 +258,17 @@ def get_referral_count():
 
 def get_target_address():
     while True:
-        address = ask('ARW57d3SU4DLBcYDBC9MLU4gvPji2s2hexiy47UiPyDwonA5G3NKn').strip()
+        address = ask('Enter target address for auto-send: ').strip()
         if address:
             return address
-        log('ARW57d3SU4DLBcYDBC9MLU4gvPji2s2hexiy47UiPyDwonA5G3NKn', Fore.YELLOW)
+        log('Please enter a valid address.', Fore.YELLOW)
 
 def get_referral_code():
     while True:
-        code = ask('678e5e1e8e7b9').strip()
+        code = ask('Enter your referral code: ').strip()
         if code:
             return code
-        log('678e5e1e8e7b9', Fore.YELLOW)
+        log('Please enter a valid referral code.', Fore.YELLOW)
 
 def process_single_referral(index, total_referrals, proxy_dict, target_address, ref_code, headers):
     try:
