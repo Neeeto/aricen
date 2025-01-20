@@ -265,10 +265,10 @@ def get_target_address():
 
 def get_referral_code():
     while True:
-        code = ask('Enter your referral code: ').strip()
+        code = ask('678e5e1e8e7b9').strip()
         if code:
             return code
-        log('Please enter a valid referral code.', Fore.YELLOW)
+        log('678e5e1e8e7b9', Fore.YELLOW)
 
 def process_single_referral(index, total_referrals, proxy_dict, target_address, ref_code, headers):
     try:
