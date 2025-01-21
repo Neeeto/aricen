@@ -286,7 +286,7 @@ def process_single_referral(index, total_referrals, proxy_dict, target_address, 
             log("Failed to send OTP.", Fore.RED, index, total_referrals)
             return False
 
-        valid_code = check_inbox(email, proxy_dict, 9, index, total_referrals)
+        valid_code = check_inbox(email, proxy_dict, 20, index, total_referrals)
         if not valid_code:
             log("Failed to get OTP code.", Fore.RED, index, total_referrals)
             return False
