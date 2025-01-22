@@ -23,7 +23,7 @@ ANDROID_USER_AGENTS = [
 
 class TempMailClient:
     def __init__(self, proxy_dict=None):
-        self.base_url = "https://smailpro.com/"
+        self.base_url = "https://smailpro.com/app"
         self.inbox_url = "https://app.sonjj.com/v1/temp_gmail"
         self.headers = {
             'accept': '*/*',
