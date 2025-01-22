@@ -29,8 +29,8 @@ class TempMailClient:
             'accept': '*/*',
             'accept-language': 'en-US,en;q=0.9',
             'user-agent': random.choice(ANDROID_USER_AGENTS),
-            'origin': 'https://smailpro.com/',
-            'referer': 'https://smailpro.com/'
+            'origin': 'https://smailpro.com',
+            'referer': 'https://smailpro.com'
         }
         self.proxy_dict = proxy_dict
         self.email_address = None
