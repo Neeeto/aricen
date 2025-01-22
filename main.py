@@ -23,14 +23,14 @@ ANDROID_USER_AGENTS = [
 
 class TempMailClient:
     def __init__(self, proxy_dict=None):
-        self.base_url = "https://temp-mail.io/app"
+        self.base_url = "http://smailpro.com/app"
         self.inbox_url = "https://app.sonjj.com/v1/temp_gmail"
         self.headers = {
             'accept': '*/*',
             'accept-language': 'en-US,en;q=0.9',
             'user-agent': random.choice(ANDROID_USER_AGENTS),
-            'origin': 'https://temp-mail.io',
-            'referer': 'https://temp-mail.io'
+            'origin': 'http://smailpro.com',
+            'referer': 'http://smailpro.com'
         }
         self.proxy_dict = proxy_dict
         self.email_address = None
